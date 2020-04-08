@@ -225,14 +225,14 @@
         [closeBtn setTitle:@"✕" forState:UIControlStateNormal];
         closeBtn.titleLabel.font = [UIFont systemFontOfSize: 32];
         [closeBtn setTitleColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.6] forState:UIControlStateNormal];
-        [closeBtn setFrame:CGRectMake(0, viewHeight - 50, viewWidth, 50)];
+        [closeBtn setFrame:CGRectMake(0, 50, 50, 50)];
         closeBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         closeBtn.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
         [closeBtn setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.6]];
         [closeBtn addTarget:self action:@selector(closeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [self.viewController.view addSubview:closeBtn];
         
-        imageLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, viewHeight - 50, viewWidth - 120, 50)];
+        imageLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 50, viewWidth - 120, 50)];
         imageLabel.numberOfLines = 0;
         imageLabel.lineBreakMode = NSLineBreakByWordWrapping;
         imageLabel.minimumScaleFactor = 0.5;
@@ -282,7 +282,7 @@
         [fullView setFrame:CGRectMake(0, 0, viewWidth, viewHeight)];
         [imageView setFrame:CGRectMake(0, 0, viewWidth, viewHeight)];
         fullView.contentSize = imageView.frame.size;
-        [closeBtn setFrame:CGRectMake(0, viewHeight - 50, 50, 50)];
+        [closeBtn setFrame:CGRectMake(0, 50, 50, 50)];
     }
 }
 
